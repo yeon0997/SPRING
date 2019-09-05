@@ -1,0 +1,1033 @@
+!SESSION 2019-09-05 11:10:32.572 -----------------------------------------------
+eclipse.buildId=4.8.0.I20180611-0500
+java.version=1.8.0_221
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.core 2 0 2019-09-05 11:11:18.704
+!MESSAGE Builtin LFS support not present/detected
+!STACK 0
+java.lang.ClassNotFoundException: org.eclipse.jgit.lfs.BuiltinLFS cannot be found by org.eclipse.egit.core_5.0.0.201806131550-r
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:508)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:419)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:411)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:150)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Unknown Source)
+	at org.eclipse.egit.core.Activator.registerBuiltinLFS(Activator.java:279)
+	at org.eclipse.egit.core.Activator.start(Activator.java:212)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:779)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:772)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:729)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1002)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:354)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:581)
+	at org.eclipse.osgi.container.Module.start(Module.java:449)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:468)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:114)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:505)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:328)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:392)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:36)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:454)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:419)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:411)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:150)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.egit.ui.Activator$RepositoryChangeScanner.<init>(Activator.java:921)
+	at org.eclipse.egit.ui.Activator.setupRepoChangeScanner(Activator.java:1034)
+	at org.eclipse.egit.ui.Activator.start(Activator.java:336)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:779)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:772)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:729)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1002)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:354)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:581)
+	at org.eclipse.osgi.container.Module.start(Module.java:449)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:468)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:114)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:505)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:328)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:392)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:470)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:419)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:411)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:150)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:609)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:177)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:931)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:60)
+	at org.eclipse.ui.internal.services.WorkbenchServiceRegistry.getSourceProviders(WorkbenchServiceRegistry.java:174)
+	at org.eclipse.ui.internal.services.SourceProviderService.readRegistry(SourceProviderService.java:104)
+	at org.eclipse.ui.internal.Workbench$34.runWithException(Workbench.java:2378)
+	at org.eclipse.ui.internal.StartupThreading$StartupRunnable.run(StartupThreading.java:32)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:233)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:144)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4567)
+	at org.eclipse.ui.internal.StartupThreading.runWithoutExceptions(StartupThreading.java:95)
+	at org.eclipse.ui.internal.Workbench.initializeDefaultServices(Workbench.java:2373)
+	at org.eclipse.ui.internal.Workbench.init(Workbench.java:1654)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2859)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:654)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:597)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:656)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:592)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1498)
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-09-05 11:11:30.471
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\USER'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2019-09-05 11:11:33.276
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $. ; version: 2.0.7.v20170906-1327
+!STACK 0
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:224)
+	at com.google.gson.Gson.fromJson(Gson.java:888)
+	at com.google.gson.Gson.fromJson(Gson.java:853)
+	at com.google.gson.Gson.fromJson(Gson.java:802)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.json.Json.deserialize(Json.java:91)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:66)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$DelegateService$1.run(AbstractIdleService.java:62)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:122)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:385)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:213)
+	... 9 more
+!SESSION 2019-09-05 11:14:08.903 -----------------------------------------------
+eclipse.buildId=4.12.0.I20190605-1800
+java.version=1.8.0_221
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.core 1 0 2019-09-05 11:15:26.906
+!MESSAGE Using Apache MINA sshd as ssh client.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-09-05 11:15:39.317
+!MESSAGE Removing part descriptor with the 'org.eclipse.recommenders.apidocs.rcp.views.apidocs' id and the 'Augmented Docs' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-09-05 11:15:39.896
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\USER'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-09-05 11:15:40.490
+!MESSAGE Removing part descriptor with the 'org.eclipse.recommenders.models.rcp.views.projectCoordinates' id and the 'Project Coordinates' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-09-05 11:15:40.613
+!MESSAGE Removing part descriptor with the 'org.eclipse.recommenders.models.rcp.views.modelRepositories' id and the 'Model Repositories' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-09-05 11:15:40.618
+!MESSAGE Removing part descriptor with the 'org.eclipse.recommenders.models.rcp.views.dependencyOverview' id and the 'Dependency Overview' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+!SESSION 2019-09-05 11:15:52.509 -----------------------------------------------
+eclipse.buildId=4.12.0.I20190605-1800
+java.version=1.8.0_221
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.core 1 0 2019-09-05 11:15:57.595
+!MESSAGE Using Apache MINA sshd as ssh client.
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-09-05 11:16:01.114
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\USER'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2019-09-05 11:20:05.712 -----------------------------------------------
+eclipse.buildId=4.8.0.I20180611-0500
+java.version=1.8.0_221
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.core 2 0 2019-09-05 11:20:11.945
+!MESSAGE Builtin LFS support not present/detected
+!STACK 0
+java.lang.ClassNotFoundException: org.eclipse.jgit.lfs.BuiltinLFS cannot be found by org.eclipse.egit.core_5.0.0.201806131550-r
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:508)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:419)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:411)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:150)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Unknown Source)
+	at org.eclipse.egit.core.Activator.registerBuiltinLFS(Activator.java:279)
+	at org.eclipse.egit.core.Activator.start(Activator.java:212)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:779)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:772)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:729)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1002)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:354)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:581)
+	at org.eclipse.osgi.container.Module.start(Module.java:449)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:468)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:114)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:505)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:328)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:392)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:36)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:454)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:419)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:411)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:150)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.egit.ui.Activator$RepositoryChangeScanner.<init>(Activator.java:921)
+	at org.eclipse.egit.ui.Activator.setupRepoChangeScanner(Activator.java:1034)
+	at org.eclipse.egit.ui.Activator.start(Activator.java:336)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:779)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:772)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:729)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1002)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:354)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:581)
+	at org.eclipse.osgi.container.Module.start(Module.java:449)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:468)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:114)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:505)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:328)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:392)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:470)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:419)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:411)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:150)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:609)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:177)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:931)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:60)
+	at org.eclipse.ui.internal.services.WorkbenchServiceRegistry.getSourceProviders(WorkbenchServiceRegistry.java:174)
+	at org.eclipse.ui.internal.services.SourceProviderService.readRegistry(SourceProviderService.java:104)
+	at org.eclipse.ui.internal.Workbench$34.runWithException(Workbench.java:2378)
+	at org.eclipse.ui.internal.StartupThreading$StartupRunnable.run(StartupThreading.java:32)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:233)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:144)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4567)
+	at org.eclipse.ui.internal.StartupThreading.runWithoutExceptions(StartupThreading.java:95)
+	at org.eclipse.ui.internal.Workbench.initializeDefaultServices(Workbench.java:2373)
+	at org.eclipse.ui.internal.Workbench.init(Workbench.java:1654)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2859)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:654)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:597)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:656)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:592)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1498)
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-09-05 11:20:15.204
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\USER'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-09-05 11:20:15.235
+!MESSAGE Removing part descriptor with the 'org.eclipse.ui.views.minimap.MinimapView' id and the 'Minimap' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2019-09-05 11:20:17.936
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $. ; version: 2.0.7.v20170906-1327
+!STACK 0
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:224)
+	at com.google.gson.Gson.fromJson(Gson.java:888)
+	at com.google.gson.Gson.fromJson(Gson.java:853)
+	at com.google.gson.Gson.fromJson(Gson.java:802)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.json.Json.deserialize(Json.java:91)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:66)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$DelegateService$1.run(AbstractIdleService.java:62)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:122)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:385)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:213)
+	... 9 more
+
+!ENTRY org.eclipse.epp.mpc.core 4 0 2019-09-05 11:28:22.019
+!MESSAGE Unexpected exception
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceDiscoveryStrategy.findMarketplaceCategory(MarketplaceDiscoveryStrategy.java:897)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performUpdateCheckDiscovery(MarketplaceCatalog.java:230)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.getUpdateCheckItems(MarketplaceCatalog.java:215)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.checkForUpdates(MarketplaceCatalog.java:147)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceViewer.lambda$6(MarketplaceViewer.java:707)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+!SUBENTRY 1 org.eclipse.epp.mpc.core 4 0 2019-09-05 11:28:22.019
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceDiscoveryStrategy.findMarketplaceCategory(MarketplaceDiscoveryStrategy.java:897)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.performUpdateCheckDiscovery(MarketplaceCatalog.java:230)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.getUpdateCheckItems(MarketplaceCatalog.java:215)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.checkForUpdates(MarketplaceCatalog.java:147)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceViewer.lambda$6(MarketplaceViewer.java:707)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+
+!ENTRY org.eclipse.ui 4 0 2019-09-05 11:38:18.861
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.e4.core.di.InjectionException: org.eclipse.core.commands.NotHandledException: Handler org.eclipse.ui.internal.handlers.WidgetMethodHandler@4b5b8a39 is not handled for for command Command(org.eclipse.ui.edit.copy,Copy,
+		Copy the selection to the clipboard,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@10d85b0f,
+		,,true)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:65)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:318)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:252)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:161)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:152)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:494)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:487)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:204)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.executeCommand(KeyBindingDispatcher.java:305)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.press(KeyBindingDispatcher.java:579)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.processKeyEvent(KeyBindingDispatcher.java:648)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.filterKeySequenceBindings(KeyBindingDispatcher.java:438)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.access$2(KeyBindingDispatcher.java:381)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher$KeyDownFilter.handleEvent(KeyBindingDispatcher.java:93)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.filterEvent(Display.java:1190)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1051)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1076)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1103)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1099)
+	at org.eclipse.swt.widgets.Widget.wmChar(Widget.java:1486)
+	at org.eclipse.swt.widgets.Control.WM_CHAR(Control.java:4884)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4765)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4765)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2303)
+	at org.eclipse.swt.ole.win32.OleFrame.getMsgProc(OleFrame.java:273)
+	at org.eclipse.swt.internal.win32.OS.PeekMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.PeekMessage(OS.java:2787)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3529)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:818)
+	at org.eclipse.jface.window.Window.open(Window.java:794)
+	at org.eclipse.epp.internal.mpc.ui.commands.AbstractMarketplaceWizardCommand.openWizardDialog(AbstractMarketplaceWizardCommand.java:145)
+	at org.eclipse.epp.internal.mpc.ui.commands.AbstractMarketplaceWizardCommand.execute(AbstractMarketplaceWizardCommand.java:72)
+	at org.eclipse.epp.mpc.ui.MarketplaceUrlHandler.triggerInstall(MarketplaceUrlHandler.java:224)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceBrowserIntegration.handleInstallRequest(MarketplaceBrowserIntegration.java:48)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceUrlHandler.handleInstallRequest(MarketplaceUrlHandler.java:65)
+	at org.eclipse.epp.mpc.ui.MarketplaceUrlHandler.handleUri(MarketplaceUrlHandler.java:249)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceBrowserIntegration.changing(MarketplaceBrowserIntegration.java:41)
+	at org.eclipse.swt.browser.IE.lambda$6(IE.java:522)
+	at org.eclipse.swt.ole.win32.OleEventTable.sendEvent(OleEventTable.java:55)
+	at org.eclipse.swt.ole.win32.OleEventSink.notifyListener(OleEventSink.java:157)
+	at org.eclipse.swt.ole.win32.OleEventSink.Invoke(OleEventSink.java:125)
+	at org.eclipse.swt.ole.win32.OleEventSink.access$1(OleEventSink.java:102)
+	at org.eclipse.swt.ole.win32.OleEventSink$1.method6(OleEventSink.java:76)
+	at org.eclipse.swt.internal.ole.win32.COMObject.callback6(COMObject.java:119)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2303)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3532)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:818)
+	at org.eclipse.jface.window.Window.open(Window.java:794)
+	at org.eclipse.epp.internal.mpc.ui.commands.AbstractMarketplaceWizardCommand.openWizardDialog(AbstractMarketplaceWizardCommand.java:145)
+	at org.eclipse.epp.internal.mpc.ui.commands.AbstractMarketplaceWizardCommand.execute(AbstractMarketplaceWizardCommand.java:72)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:291)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:93)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:318)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:252)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:161)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:152)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:494)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:487)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:204)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.executeItem(HandledContributionItem.java:433)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.handleWidgetSelection(AbstractContributionItem.java:446)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.lambda$2(AbstractContributionItem.java:472)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4118)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1052)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3931)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3534)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1170)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1059)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:667)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:597)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:656)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:592)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1498)
+Caused by: org.eclipse.core.commands.NotHandledException: Handler org.eclipse.ui.internal.handlers.WidgetMethodHandler@4b5b8a39 is not handled for for command Command(org.eclipse.ui.edit.copy,Copy,
+		Copy the selection to the clipboard,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@10d85b0f,
+		,,true)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:96)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	... 96 more
+!SESSION 2019-09-05 11:40:07.627 -----------------------------------------------
+eclipse.buildId=4.8.0.I20180611-0500
+java.version=1.8.0_221
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data file:/D:/GitHub/spring/ -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.core 2 0 2019-09-05 11:40:11.517
+!MESSAGE Builtin LFS support not present/detected
+!STACK 0
+java.lang.ClassNotFoundException: org.eclipse.jgit.lfs.BuiltinLFS cannot be found by org.eclipse.egit.core_5.0.0.201806131550-r
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:508)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:419)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:411)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:150)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Unknown Source)
+	at org.eclipse.egit.core.Activator.registerBuiltinLFS(Activator.java:279)
+	at org.eclipse.egit.core.Activator.start(Activator.java:212)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:779)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:772)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:729)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1002)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:354)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:581)
+	at org.eclipse.osgi.container.Module.start(Module.java:449)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:468)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:114)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:505)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:328)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:392)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:36)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:454)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:419)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:411)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:150)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.egit.ui.Activator$RepositoryChangeScanner.<init>(Activator.java:921)
+	at org.eclipse.egit.ui.Activator.setupRepoChangeScanner(Activator.java:1034)
+	at org.eclipse.egit.ui.Activator.start(Activator.java:336)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:779)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:772)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:729)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1002)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:354)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:581)
+	at org.eclipse.osgi.container.Module.start(Module.java:449)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:468)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:114)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:505)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:328)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:392)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:470)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:419)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:411)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:150)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:609)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:177)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:931)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:60)
+	at org.eclipse.ui.internal.services.WorkbenchServiceRegistry.getSourceProviders(WorkbenchServiceRegistry.java:174)
+	at org.eclipse.ui.internal.services.SourceProviderService.readRegistry(SourceProviderService.java:104)
+	at org.eclipse.ui.internal.Workbench$34.runWithException(Workbench.java:2378)
+	at org.eclipse.ui.internal.StartupThreading$StartupRunnable.run(StartupThreading.java:32)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:233)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:144)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4567)
+	at org.eclipse.ui.internal.StartupThreading.runWithoutExceptions(StartupThreading.java:95)
+	at org.eclipse.ui.internal.Workbench.initializeDefaultServices(Workbench.java:2373)
+	at org.eclipse.ui.internal.Workbench.init(Workbench.java:1654)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2859)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:654)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:597)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:656)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:592)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1498)
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-09-05 11:40:14.819
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\USER'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2019-09-05 11:40:17.729
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $. ; version: 2.0.7.v20170906-1327
+!STACK 0
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:224)
+	at com.google.gson.Gson.fromJson(Gson.java:888)
+	at com.google.gson.Gson.fromJson(Gson.java:853)
+	at com.google.gson.Gson.fromJson(Gson.java:802)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.json.Json.deserialize(Json.java:91)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:66)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$DelegateService$1.run(AbstractIdleService.java:62)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:122)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:385)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:213)
+	... 9 more
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2019-09-05 11:48:00.857
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 1 10001 2019-09-05 11:48:00.857
+!MESSAGE Your original request has been modified.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-05 11:48:00.857
+!MESSAGE "Buildship, Eclipse Plug-ins for Gradle - STS Gradle Migration" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-05 11:48:00.857
+!MESSAGE "com.jcraft.jzlib" is already installed, so an update will be performed instead.
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10054 2019-09-05 11:48:00.857
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-09-05 11:48:00.857
+!MESSAGE Software being installed: Buildship, Eclipse Plug-ins for Gradle - STS Gradle Migration 2.2.2.v20181003-1021 (org.eclipse.buildship.stsmigration 2.2.2.v20181003-1021)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-09-05 11:48:00.857
+!MESSAGE Software currently installed: Buildship: Eclipse Plug-ins for Gradle 2.2.1.v20180125-1441 (org.eclipse.buildship.feature.group 2.2.1.v20180125-1441)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2019-09-05 11:48:00.857
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-05 11:48:00.857
+!MESSAGE Buildship, Eclipse Plug-ins for Gradle - STS Gradle Migration 2.2.2.v20181003-1021 (org.eclipse.buildship.stsmigration 2.2.2.v20181003-1021)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-05 11:48:00.857
+!MESSAGE Buildship, Eclipse Plug-ins for Gradle - STS Gradle Migration 2.2.1.v20180125-1441 (org.eclipse.buildship.stsmigration 2.2.1.v20180125-1441)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2019-09-05 11:48:00.857
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-05 11:48:00.857
+!MESSAGE From: Buildship: Eclipse Plug-ins for Gradle 2.2.1.v20180125-1441 (org.eclipse.buildship.feature.group 2.2.1.v20180125-1441)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-05 11:48:00.857
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.buildship.stsmigration [2.2.1.v20180125-1441,2.2.1.v20180125-1441]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2019-09-05 11:48:00.880
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 1 10001 2019-09-05 11:48:00.880
+!MESSAGE Your original request has been modified.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-05 11:48:00.880
+!MESSAGE "Buildship, Eclipse Plug-ins for Gradle - STS Gradle Migration" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-05 11:48:00.880
+!MESSAGE "com.jcraft.jzlib" is already installed, so an update will be performed instead.
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10054 2019-09-05 11:48:00.880
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-09-05 11:48:00.880
+!MESSAGE Software being installed: Buildship, Eclipse Plug-ins for Gradle - STS Gradle Migration 2.2.2.v20181003-1021 (org.eclipse.buildship.stsmigration 2.2.2.v20181003-1021)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-09-05 11:48:00.880
+!MESSAGE Software currently installed: Buildship: Eclipse Plug-ins for Gradle 2.2.1.v20180125-1441 (org.eclipse.buildship.feature.group 2.2.1.v20180125-1441)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2019-09-05 11:48:00.880
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-05 11:48:00.880
+!MESSAGE Buildship, Eclipse Plug-ins for Gradle - STS Gradle Migration 2.2.2.v20181003-1021 (org.eclipse.buildship.stsmigration 2.2.2.v20181003-1021)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-05 11:48:00.880
+!MESSAGE Buildship, Eclipse Plug-ins for Gradle - STS Gradle Migration 2.2.1.v20180125-1441 (org.eclipse.buildship.stsmigration 2.2.1.v20180125-1441)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2019-09-05 11:48:00.880
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-05 11:48:00.880
+!MESSAGE From: Buildship: Eclipse Plug-ins for Gradle 2.2.1.v20180125-1441 (org.eclipse.buildship.feature.group 2.2.1.v20180125-1441)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-05 11:48:00.880
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.buildship.stsmigration [2.2.1.v20180125-1441,2.2.1.v20180125-1441]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2019-09-05 11:48:01.003
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 1 10001 2019-09-05 11:48:01.003
+!MESSAGE Your original request has been modified.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-05 11:48:01.003
+!MESSAGE "Buildship, Eclipse Plug-ins for Gradle - STS Gradle Migration" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-05 11:48:01.004
+!MESSAGE "com.jcraft.jzlib" is already installed, so an update will be performed instead.
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10054 2019-09-05 11:48:01.004
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-09-05 11:48:01.004
+!MESSAGE Software being installed: Buildship, Eclipse Plug-ins for Gradle - STS Gradle Migration 2.2.2.v20181003-1021 (org.eclipse.buildship.stsmigration 2.2.2.v20181003-1021)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-09-05 11:48:01.004
+!MESSAGE Software currently installed: Buildship: Eclipse Plug-ins for Gradle 2.2.1.v20180125-1441 (org.eclipse.buildship.feature.group 2.2.1.v20180125-1441)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2019-09-05 11:48:01.004
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-05 11:48:01.004
+!MESSAGE Buildship, Eclipse Plug-ins for Gradle - STS Gradle Migration 2.2.2.v20181003-1021 (org.eclipse.buildship.stsmigration 2.2.2.v20181003-1021)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-05 11:48:01.004
+!MESSAGE Buildship, Eclipse Plug-ins for Gradle - STS Gradle Migration 2.2.1.v20180125-1441 (org.eclipse.buildship.stsmigration 2.2.1.v20180125-1441)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2019-09-05 11:48:01.004
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-05 11:48:01.004
+!MESSAGE From: Buildship: Eclipse Plug-ins for Gradle 2.2.1.v20180125-1441 (org.eclipse.buildship.feature.group 2.2.1.v20180125-1441)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-05 11:48:01.004
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.buildship.stsmigration [2.2.1.v20180125-1441,2.2.1.v20180125-1441]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2019-09-05 11:48:01.007
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 1 10001 2019-09-05 11:48:01.007
+!MESSAGE Your original request has been modified.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-05 11:48:01.007
+!MESSAGE "Buildship, Eclipse Plug-ins for Gradle - STS Gradle Migration" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-05 11:48:01.007
+!MESSAGE "com.jcraft.jzlib" is already installed, so an update will be performed instead.
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10054 2019-09-05 11:48:01.007
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-09-05 11:48:01.007
+!MESSAGE Software being installed: Buildship, Eclipse Plug-ins for Gradle - STS Gradle Migration 2.2.2.v20181003-1021 (org.eclipse.buildship.stsmigration 2.2.2.v20181003-1021)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-09-05 11:48:01.007
+!MESSAGE Software currently installed: Buildship: Eclipse Plug-ins for Gradle 2.2.1.v20180125-1441 (org.eclipse.buildship.feature.group 2.2.1.v20180125-1441)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2019-09-05 11:48:01.007
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-05 11:48:01.007
+!MESSAGE Buildship, Eclipse Plug-ins for Gradle - STS Gradle Migration 2.2.2.v20181003-1021 (org.eclipse.buildship.stsmigration 2.2.2.v20181003-1021)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-05 11:48:01.007
+!MESSAGE Buildship, Eclipse Plug-ins for Gradle - STS Gradle Migration 2.2.1.v20180125-1441 (org.eclipse.buildship.stsmigration 2.2.1.v20180125-1441)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2019-09-05 11:48:01.007
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-05 11:48:01.007
+!MESSAGE From: Buildship: Eclipse Plug-ins for Gradle 2.2.1.v20180125-1441 (org.eclipse.buildship.feature.group 2.2.1.v20180125-1441)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-05 11:48:01.007
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.buildship.stsmigration [2.2.1.v20180125-1441,2.2.1.v20180125-1441]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2019-09-05 11:57:52.806
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 1 10001 2019-09-05 11:57:52.806
+!MESSAGE Your original request has been modified.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-05 11:57:52.806
+!MESSAGE "Buildship, Eclipse Plug-ins for Gradle - STS Gradle Migration" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-05 11:57:52.806
+!MESSAGE "com.jcraft.jzlib" is already installed, so an update will be performed instead.
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10054 2019-09-05 11:57:52.806
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-09-05 11:57:52.806
+!MESSAGE Software being installed: Buildship, Eclipse Plug-ins for Gradle - STS Gradle Migration 2.2.2.v20181003-1021 (org.eclipse.buildship.stsmigration 2.2.2.v20181003-1021)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-09-05 11:57:52.806
+!MESSAGE Software currently installed: Buildship: Eclipse Plug-ins for Gradle 2.2.1.v20180125-1441 (org.eclipse.buildship.feature.group 2.2.1.v20180125-1441)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2019-09-05 11:57:52.806
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-05 11:57:52.806
+!MESSAGE Buildship, Eclipse Plug-ins for Gradle - STS Gradle Migration 2.2.2.v20181003-1021 (org.eclipse.buildship.stsmigration 2.2.2.v20181003-1021)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-05 11:57:52.806
+!MESSAGE Buildship, Eclipse Plug-ins for Gradle - STS Gradle Migration 2.2.1.v20180125-1441 (org.eclipse.buildship.stsmigration 2.2.1.v20180125-1441)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2019-09-05 11:57:52.806
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-05 11:57:52.806
+!MESSAGE From: Buildship: Eclipse Plug-ins for Gradle 2.2.1.v20180125-1441 (org.eclipse.buildship.feature.group 2.2.1.v20180125-1441)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-05 11:57:52.806
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.buildship.stsmigration [2.2.1.v20180125-1441,2.2.1.v20180125-1441]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2019-09-05 11:57:52.822
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 1 10001 2019-09-05 11:57:52.822
+!MESSAGE Your original request has been modified.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-05 11:57:52.822
+!MESSAGE "Buildship, Eclipse Plug-ins for Gradle - STS Gradle Migration" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-05 11:57:52.822
+!MESSAGE "com.jcraft.jzlib" is already installed, so an update will be performed instead.
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10054 2019-09-05 11:57:52.822
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-09-05 11:57:52.822
+!MESSAGE Software being installed: Buildship, Eclipse Plug-ins for Gradle - STS Gradle Migration 2.2.2.v20181003-1021 (org.eclipse.buildship.stsmigration 2.2.2.v20181003-1021)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-09-05 11:57:52.822
+!MESSAGE Software currently installed: Buildship: Eclipse Plug-ins for Gradle 2.2.1.v20180125-1441 (org.eclipse.buildship.feature.group 2.2.1.v20180125-1441)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2019-09-05 11:57:52.822
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-05 11:57:52.822
+!MESSAGE Buildship, Eclipse Plug-ins for Gradle - STS Gradle Migration 2.2.2.v20181003-1021 (org.eclipse.buildship.stsmigration 2.2.2.v20181003-1021)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-05 11:57:52.822
+!MESSAGE Buildship, Eclipse Plug-ins for Gradle - STS Gradle Migration 2.2.1.v20180125-1441 (org.eclipse.buildship.stsmigration 2.2.1.v20180125-1441)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2019-09-05 11:57:52.822
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-05 11:57:52.822
+!MESSAGE From: Buildship: Eclipse Plug-ins for Gradle 2.2.1.v20180125-1441 (org.eclipse.buildship.feature.group 2.2.1.v20180125-1441)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-05 11:57:52.822
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.buildship.stsmigration [2.2.1.v20180125-1441,2.2.1.v20180125-1441]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2019-09-05 11:57:52.950
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 1 10001 2019-09-05 11:57:52.950
+!MESSAGE Your original request has been modified.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-05 11:57:52.950
+!MESSAGE "Buildship, Eclipse Plug-ins for Gradle - STS Gradle Migration" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-05 11:57:52.950
+!MESSAGE "com.jcraft.jzlib" is already installed, so an update will be performed instead.
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10054 2019-09-05 11:57:52.950
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-09-05 11:57:52.950
+!MESSAGE Software being installed: Buildship, Eclipse Plug-ins for Gradle - STS Gradle Migration 2.2.2.v20181003-1021 (org.eclipse.buildship.stsmigration 2.2.2.v20181003-1021)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-09-05 11:57:52.950
+!MESSAGE Software currently installed: Buildship: Eclipse Plug-ins for Gradle 2.2.1.v20180125-1441 (org.eclipse.buildship.feature.group 2.2.1.v20180125-1441)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2019-09-05 11:57:52.950
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-05 11:57:52.950
+!MESSAGE Buildship, Eclipse Plug-ins for Gradle - STS Gradle Migration 2.2.2.v20181003-1021 (org.eclipse.buildship.stsmigration 2.2.2.v20181003-1021)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-05 11:57:52.950
+!MESSAGE Buildship, Eclipse Plug-ins for Gradle - STS Gradle Migration 2.2.1.v20180125-1441 (org.eclipse.buildship.stsmigration 2.2.1.v20180125-1441)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2019-09-05 11:57:52.950
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-05 11:57:52.950
+!MESSAGE From: Buildship: Eclipse Plug-ins for Gradle 2.2.1.v20180125-1441 (org.eclipse.buildship.feature.group 2.2.1.v20180125-1441)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-05 11:57:52.950
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.buildship.stsmigration [2.2.1.v20180125-1441,2.2.1.v20180125-1441]
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2019-09-05 11:57:52.954
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 1 10001 2019-09-05 11:57:52.954
+!MESSAGE Your original request has been modified.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-05 11:57:52.954
+!MESSAGE "Buildship, Eclipse Plug-ins for Gradle - STS Gradle Migration" is already installed, so an update will be performed instead.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 1 10003 2019-09-05 11:57:52.954
+!MESSAGE "com.jcraft.jzlib" is already installed, so an update will be performed instead.
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 10054 2019-09-05 11:57:52.954
+!MESSAGE Cannot complete the install because of a conflicting dependency.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-09-05 11:57:52.954
+!MESSAGE Software being installed: Buildship, Eclipse Plug-ins for Gradle - STS Gradle Migration 2.2.2.v20181003-1021 (org.eclipse.buildship.stsmigration 2.2.2.v20181003-1021)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-09-05 11:57:52.954
+!MESSAGE Software currently installed: Buildship: Eclipse Plug-ins for Gradle 2.2.1.v20180125-1441 (org.eclipse.buildship.feature.group 2.2.1.v20180125-1441)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2019-09-05 11:57:52.954
+!MESSAGE Only one of the following can be installed at once: 
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-05 11:57:52.954
+!MESSAGE Buildship, Eclipse Plug-ins for Gradle - STS Gradle Migration 2.2.2.v20181003-1021 (org.eclipse.buildship.stsmigration 2.2.2.v20181003-1021)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-05 11:57:52.954
+!MESSAGE Buildship, Eclipse Plug-ins for Gradle - STS Gradle Migration 2.2.1.v20180125-1441 (org.eclipse.buildship.stsmigration 2.2.1.v20180125-1441)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 1 2019-09-05 11:57:52.954
+!MESSAGE Cannot satisfy dependency:
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-05 11:57:52.954
+!MESSAGE From: Buildship: Eclipse Plug-ins for Gradle 2.2.1.v20180125-1441 (org.eclipse.buildship.feature.group 2.2.1.v20180125-1441)
+!SUBENTRY 3 org.eclipse.equinox.p2.director 4 0 2019-09-05 11:57:52.954
+!MESSAGE To: org.eclipse.equinox.p2.iu; org.eclipse.buildship.stsmigration [2.2.1.v20180125-1441,2.2.1.v20180125-1441]
+!SESSION 2019-09-05 11:58:14.903 -----------------------------------------------
+eclipse.buildId=4.8.0.I20180611-0500
+java.version=1.8.0_221
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -data file:/D:/GitHub/spring/ -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.core 2 0 2019-09-05 11:58:22.849
+!MESSAGE Builtin LFS support not present/detected
+!STACK 0
+java.lang.ClassNotFoundException: org.eclipse.jgit.lfs.BuiltinLFS cannot be found by org.eclipse.egit.core_5.0.0.201806131550-r
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:508)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:419)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:411)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:150)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Unknown Source)
+	at org.eclipse.egit.core.Activator.registerBuiltinLFS(Activator.java:279)
+	at org.eclipse.egit.core.Activator.start(Activator.java:212)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:779)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:772)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:729)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1002)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:354)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:581)
+	at org.eclipse.osgi.container.Module.start(Module.java:449)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:468)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:114)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:505)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:328)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:392)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:36)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:454)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:419)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:411)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:150)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.egit.ui.Activator$RepositoryChangeScanner.<init>(Activator.java:921)
+	at org.eclipse.egit.ui.Activator.setupRepoChangeScanner(Activator.java:1034)
+	at org.eclipse.egit.ui.Activator.start(Activator.java:336)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:779)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:772)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:729)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1002)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:354)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:581)
+	at org.eclipse.osgi.container.Module.start(Module.java:449)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:468)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:114)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:505)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:328)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:392)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:470)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:419)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:411)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:150)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:609)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:177)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:931)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:60)
+	at org.eclipse.ui.internal.services.WorkbenchServiceRegistry.getSourceProviders(WorkbenchServiceRegistry.java:174)
+	at org.eclipse.ui.internal.services.SourceProviderService.readRegistry(SourceProviderService.java:104)
+	at org.eclipse.ui.internal.Workbench$34.runWithException(Workbench.java:2378)
+	at org.eclipse.ui.internal.StartupThreading$StartupRunnable.run(StartupThreading.java:32)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:233)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:144)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4567)
+	at org.eclipse.ui.internal.StartupThreading.runWithoutExceptions(StartupThreading.java:95)
+	at org.eclipse.ui.internal.Workbench.initializeDefaultServices(Workbench.java:2373)
+	at org.eclipse.ui.internal.Workbench.init(Workbench.java:1654)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2859)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:654)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:597)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:656)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:592)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1498)
+
+!ENTRY org.eclipse.jface 2 0 2019-09-05 11:58:26.975
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-09-05 11:58:26.975
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7e4d2615,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3b6aa2af,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.jface.text 2 0 2019-09-05 11:58:34.665
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.boolean'
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2019-09-05 11:58:37.240
+!MESSAGE Server ‘com.genuitec.eclipse.aeri.server1’ failed with exception: aer.ctrlflow.com. ; version: 2.0.7.v20170906-1327
+!STACK 0
+java.net.UnknownHostException: aer.ctrlflow.com
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(Unknown Source)
+	at java.net.InetAddress.getAddressesFromNameService(Unknown Source)
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.apache.http.client.fluent.Request.internalExecute(Request.java:173)
+	at org.apache.http.client.fluent.Executor.execute(Executor.java:262)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.request(IO.java:170)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:64)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$DelegateService$1.run(AbstractIdleService.java:62)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:122)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-09-05 11:58:37.328
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\USER'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2019-09-05 11:58:39.971
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $. ; version: 2.0.7.v20170906-1327
+!STACK 0
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:224)
+	at com.google.gson.Gson.fromJson(Gson.java:888)
+	at com.google.gson.Gson.fromJson(Gson.java:853)
+	at com.google.gson.Gson.fromJson(Gson.java:802)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.json.Json.deserialize(Json.java:91)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:66)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$DelegateService$1.run(AbstractIdleService.java:62)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:122)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:385)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:213)
+	... 9 more
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2019-09-05 12:11:28.856
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 2 10001 2019-09-05 12:11:28.856
+!MESSAGE Your original request has been modified.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2019-09-05 12:11:28.856
+!MESSAGE "Language Server Protocol client for Eclipse IDE (Incubation)" will be ignored because a newer version is already installed. 
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2019-09-05 12:11:28.856
+!MESSAGE "Marketplace Client" will be ignored because a newer version is already installed. 
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2019-09-05 12:11:28.856
+!MESSAGE Cannot complete the install because some dependencies are not satisfiable
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-09-05 12:11:28.856
+!MESSAGE org.eclipse.equinox.p2.iu; org.eclipse.actf.visualization.ui.pdt.feature.group [1.5.1.R201709131236,1.5.1.R201709131236] cannot be installed in this environment because its filter is not applicable.
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2019-09-05 12:11:28.887
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 2 10001 2019-09-05 12:11:28.887
+!MESSAGE Your original request has been modified.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2019-09-05 12:11:28.887
+!MESSAGE "Language Server Protocol client for Eclipse IDE (Incubation)" will be ignored because a newer version is already installed. 
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2019-09-05 12:11:28.887
+!MESSAGE "Marketplace Client" will be ignored because a newer version is already installed. 
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2019-09-05 12:11:28.887
+!MESSAGE Cannot complete the install because some dependencies are not satisfiable
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-09-05 12:11:28.887
+!MESSAGE org.eclipse.equinox.p2.iu; org.eclipse.actf.visualization.ui.pdt.feature.group [1.5.1.R201709131236,1.5.1.R201709131236] cannot be installed in this environment because its filter is not applicable.
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2019-09-05 12:14:33.441
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 2 10001 2019-09-05 12:14:33.441
+!MESSAGE Your original request has been modified.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2019-09-05 12:14:33.441
+!MESSAGE "Language Server Protocol client for Eclipse IDE (Incubation)" will be ignored because a newer version is already installed. 
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2019-09-05 12:14:33.441
+!MESSAGE "Marketplace Client" will be ignored because a newer version is already installed. 
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2019-09-05 12:14:33.441
+!MESSAGE Cannot complete the install because some dependencies are not satisfiable
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-09-05 12:14:33.441
+!MESSAGE org.eclipse.equinox.p2.iu; org.eclipse.actf.visualization.ui.pdt.feature.group [1.5.1.R201709131236,1.5.1.R201709131236] cannot be installed in this environment because its filter is not applicable.
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2019-09-05 12:14:33.457
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 2 10001 2019-09-05 12:14:33.457
+!MESSAGE Your original request has been modified.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2019-09-05 12:14:33.457
+!MESSAGE "Language Server Protocol client for Eclipse IDE (Incubation)" will be ignored because a newer version is already installed. 
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2019-09-05 12:14:33.457
+!MESSAGE "Marketplace Client" will be ignored because a newer version is already installed. 
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2019-09-05 12:14:33.457
+!MESSAGE Cannot complete the install because some dependencies are not satisfiable
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-09-05 12:14:33.457
+!MESSAGE org.eclipse.equinox.p2.iu; org.eclipse.actf.visualization.ui.pdt.feature.group [1.5.1.R201709131236,1.5.1.R201709131236] cannot be installed in this environment because its filter is not applicable.
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2019-09-05 12:14:33.812
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 2 10001 2019-09-05 12:14:33.812
+!MESSAGE Your original request has been modified.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2019-09-05 12:14:33.812
+!MESSAGE "Language Server Protocol client for Eclipse IDE (Incubation)" will be ignored because a newer version is already installed. 
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2019-09-05 12:14:33.812
+!MESSAGE "Marketplace Client" will be ignored because a newer version is already installed. 
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2019-09-05 12:14:33.812
+!MESSAGE Cannot complete the install because some dependencies are not satisfiable
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-09-05 12:14:33.812
+!MESSAGE org.eclipse.equinox.p2.iu; org.eclipse.actf.visualization.ui.pdt.feature.group [1.5.1.R201709131236,1.5.1.R201709131236] cannot be installed in this environment because its filter is not applicable.
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2019-09-05 12:14:33.816
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.operations 2 10001 2019-09-05 12:14:33.816
+!MESSAGE Your original request has been modified.
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2019-09-05 12:14:33.816
+!MESSAGE "Language Server Protocol client for Eclipse IDE (Incubation)" will be ignored because a newer version is already installed. 
+!SUBENTRY 2 org.eclipse.equinox.p2.operations 2 10004 2019-09-05 12:14:33.816
+!MESSAGE "Marketplace Client" will be ignored because a newer version is already installed. 
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2019-09-05 12:14:33.816
+!MESSAGE Cannot complete the install because some dependencies are not satisfiable
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2019-09-05 12:14:33.816
+!MESSAGE org.eclipse.equinox.p2.iu; org.eclipse.actf.visualization.ui.pdt.feature.group [1.5.1.R201709131236,1.5.1.R201709131236] cannot be installed in this environment because its filter is not applicable.
+
+!ENTRY org.eclipse.ui 2 2 2019-09-05 12:30:11.464
+!MESSAGE org.eclipse.jdt.junit.ResultView: Deprecated relationship "fast" should be converted to "stack".
+
+!ENTRY org.eclipse.ui 2 2 2019-09-05 12:30:11.468
+!MESSAGE org.springframework.ide.eclipse.aop.ui.navigator.aopReferenceModelNavigator: Deprecated relationship "fast" should be converted to "stack".
+
+!ENTRY org.eclipse.ui 2 2 2019-09-05 12:30:11.471
+!MESSAGE org.eclipse.contribution.xref.ui.views.XReferenceView: Deprecated relationship "fast" should be converted to "stack".
