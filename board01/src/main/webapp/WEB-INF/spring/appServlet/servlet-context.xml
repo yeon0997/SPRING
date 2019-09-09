@@ -21,8 +21,16 @@
 		<beans:property name="suffix" value=".jsp" />
 	</beans:bean>
 	
-	<context:component-scan base-package="com.javadb.controller" />
-	
-	
-	
+	<context:component-scan base-package="com.javadb" />
+	<!--
+	최상위패키지= base-package
+	원래는 com.javadb.controller였는데
+	바꾼 이유
+	home.controller가 있었슴..
+	그래서 베이스패키지로 잡았는데
+	퍼시스턴스 서비스 등 컨트롤러로 구분함
+	안바꾸면 home.controller와 동등한 패키지를 다 참조하게 됨
+	그래서 com.javadb.controller의 상위로 잡음 
+	-->
+
 </beans:beans>
