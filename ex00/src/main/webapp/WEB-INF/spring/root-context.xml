@@ -11,10 +11,15 @@
 	
 	<!-- 3.4 커넥션 풀 설정을 위해 추가 시작 -->
 	<bean id="hikariConfig" class="com.zaxxer.hikari.HikariConfig">
-		<property name="driverClassName"
+		<!-- <property name="driverClassName"
 			value="oracle.jdbc.driver.OracleDriver"></property>
 		<property name="jdbcUrl"
-			value="jdbc:oracle:thin:@localhost:1521:xe"></property>
+			value="jdbc:oracle:thin:@localhost:1521:xe"></property> -->	
+		<property name="driverClassName"
+			value="net.sf.log4jdbc.sql.jdbcapi.DriverSpy"></property>
+		<property name="jdbcUrl"
+			value="jdbc:log4jdbc:oracle:thin:@localhost:1521:xe"></property>
+			
 		<property name="username" value="madang"></property>
 		<property name="password" value="madang"></property>
 		</bean>
@@ -32,6 +37,7 @@
 	</bean>
 	<!-- mapper 설정 -->
 	<mybatis-spring:scan base-package="com.javadb.mapper" />
+
 	<!-- 2.2 의존성 주입을 위해 추가 시작 -->
 	<context:component-scan base-package="com.javadb.sample"></context:component-scan>
 	<!-- sample에서 컴포넌트를 스캔하겠다는 의미 -->
