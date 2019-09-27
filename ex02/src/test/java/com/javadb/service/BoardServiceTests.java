@@ -9,6 +9,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import com.javadb.domain.BoardVO;
+import com.javadb.domain.Criteria;
 import com.javadb.service.BoardService;
 
 import lombok.Setter;
@@ -60,6 +61,13 @@ public class BoardServiceTests {
 	  if (board == null) { return; }
 	  
 	  board.setTitle("제목 수정합니다.");
-	  log.info("MODIFY RESULT: " + service.modify(board)); }
+	  log.info("MODIFY RESULT: " + service.modify(board));
+	  }
+	  
+	  @Test
+	  public void testGetList() {
+		  //mapper.getList().forEach(board -> log.info(board));
+		  service.getList(new Criteria(2, 10)).forEach(board -> log.info(board));
+	  }
 	 
 }
