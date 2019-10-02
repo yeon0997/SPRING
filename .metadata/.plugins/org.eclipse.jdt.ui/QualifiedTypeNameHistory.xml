@@ -20,7 +20,6 @@
 <fullyQualifiedTypeName name="org.springframework.beans.propertyeditors.CustomDateEditor"/>
 <fullyQualifiedTypeName name="com.javadb.domain.TodoDTO"/>
 <fullyQualifiedTypeName name="org.springframework.format.annotation.DateTimeFormat"/>
-<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ModelAttribute"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ResponseBody"/>
 <fullyQualifiedTypeName name="org.springframework.http.ResponseEntity"/>
 <fullyQualifiedTypeName name="org.springframework.http.HttpHeaders"/>
@@ -60,4 +59,5 @@
 <fullyQualifiedTypeName name="lombok.Getter"/>
 <fullyQualifiedTypeName name="lombok.ToString"/>
 <fullyQualifiedTypeName name="com.javadb.domain.PageDTO"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ModelAttribute"/>
 </qualifiedTypeNameHistroy>
