@@ -82,17 +82,6 @@
 			<!-- /.panel-heading -->
 			<div class="panel-body">
 				<ul class="chat">
-					<!-- start reply -->
-					<li class="left clearfix" data-rno='12'>
-						<div>
-							<div class="header">
-								<strong class="primary-font">user00</strong> <small
-									class="pull-right text-muted">2018-01-01 13:13</small>
-							</div>
-							<p>Good Job!</p>
-						</div>
-					</li>
-					<!-- end reply -->
 				</ul>
 				<!-- end ul -->
 			</div>
@@ -349,34 +338,6 @@ function showList(page){
     });
   
     
-/*     modalModBtn.on("click", function(e){
-      
-      var reply = {rno:modal.data("rno"), reply: modalInputReply.val()};
-      
-      replyService.update(reply, function(result){
-            
-        alert(result);
-        modal.modal("hide");
-        showList(1);
-        
-      });
-      
-    });
-
-    modalRemoveBtn.on("click", function (e){
-    	  
-  	  var rno = modal.data("rno");
-  	  
-  	  replyService.remove(rno, function(result){
-  	        
-  	      alert(result);
-  	      modal.modal("hide");
-  	      showList(1);
-  	      
-  	  });
-  	  
-  	}); */
-
     modalModBtn.on("click", function(e){
     	  
    	  var reply = {rno:modal.data("rno"), reply: modalInputReply.val()};

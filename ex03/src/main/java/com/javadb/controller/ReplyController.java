@@ -49,9 +49,7 @@ public class ReplyController {
 			produces = {
 					MediaType.APPLICATION_XML_VALUE,
 					MediaType.APPLICATION_JSON_UTF8_VALUE })
-	public ResponseEntity<ReplyPageDTO> getList(
-			@PathVariable("page") int page,
-			@PathVariable("bno") Long bno) {
+	public ResponseEntity<ReplyPageDTO> getList( @PathVariable("page") int page, @PathVariable("bno") Long bno) {
 		
 		Criteria cri = new Criteria(page, 10);
 		
